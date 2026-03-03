@@ -1,0 +1,54 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: 'HP Simplified Light';
+  src: url('fonts/HP Simplified Light.woff2') format('woff2'),
+       url('fonts/HP Simplified Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+
+:root {
+
+--basic-color-creme:#e2dcd1;
+--basic-color-white:#ffffff;
+--basic-color-white-iniy:#f0fcfa;
+
+--automotive-color-pink:#a26374;
+
+--hero-color-brown:#936654;
+--hero-color-choco:#312f2e;
+--hero-color-blue:#6e879d;
+
+--lostdot-color-green-iniy:#f6f7f8;
+--lostdot-color-green-mint:#a0b7b0;
+--lostdot-color-green-matcha:#6f807c;
+--lostdot-color-green-moss:#2e372f;
+--lostdot-color-orange:#f5af5e;
+
+--cutecounter-color-pink:#e0718c;
+--cutecounter-color-blue:#c7daf4;
+--cutecounter-color-marin:#5b7384;
+
+
+--intercom-color-choco:#392526;
+--intercom-color-marin:#5b7384;
+
+--sam-color-grey-light:#7a7a7a;
+--sam-color-grey-dark:#2d2d2d;
+--sam-color-yellow:#f4c749;
+
+
+/* =========================
+   restore later
+========================= */
+--sam-border-color-grey-hell:#DFDFDF;
+--sam-border-color-grey-dark:#AFAFAF;
+--sam-font-color-navi-grey-dark:#222222;
+--sam-font-color-navi-hover-grey:#7A7A7A;
+--sam-font-color-grey:#767676;
+--sam-background-color-grey:#929292;
+--sam-background-color-grey-transparent:rgba(100, 100, 100, 0.5);
+
+}

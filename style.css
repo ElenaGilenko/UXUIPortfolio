@@ -1,0 +1,622 @@
+/* =========================
+   GLOBAL
+========================= */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+/* =========================
+   FIXED BACKGROUND
+========================= */
+
+.container-base {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+
+  background-color: #e2dcd1ff;
+  background-image: url('SVG/waves_white_3840_1080.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  max-width: 1440px;
+  min-height: 100px;
+  margin: 10px auto;
+  
+  background-color: var(--hero-color-choco);
+  
+  display: flex;
+  justify-content: center;
+  color: var(--basic-color-creme);
+}
+
+
+/* =========================
+   PAGE CONTAINER
+========================= */
+
+.container-page {
+  position: relative;
+  z-index: 1;
+
+  width: 100%;
+  max-width: 1440px;
+  margin: 10px auto;
+}
+
+/* =========================
+   SECTIONS
+========================= */
+.section { 
+position: relative; 
+width: 100%; 
+min-height: 1800px; /* Desktop Höhe */ 
+padding-top: 70px; /* Abstand oben */ 
+padding-bottom: 70px; /* Abstand unten */ 
+margin-top: 10px; 
+}
+
+.hero .section { 
+position: relative; 
+width: 100%; 
+min-height: 1880px; /* Desktop Höhe */ 
+padding-top: 70px; /* Abstand oben */ 
+padding-bottom: 70px; /* Abstand unten */ 
+margin-top: 10px; 
+}
+
+.hero {
+  height: 2000px;
+  background-color: var(--hero-color-choco);
+  background-image: url('SVG/waves_blue_720_1920.svg');
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: left 200px bottom 155px;
+  background-size: 100% 100%;
+}
+
+.legal {
+  height: 1500px;
+  background-color: var(--hero-color-choco);
+  background-image: url('SVG/waves_blue_720_1920.svg');
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: left 200px bottom 0px;
+  background-size: 100% 100%;
+}
+
+.legal .legal-text * {
+  width: 70%;
+  font-family: 'HP Simplified Light', sans-serif;
+  font-weight: 300;
+  color: var(--hero-color-blue);
+}
+/* h2 COLORS */
+.legal .legal-text h1 {
+  color: var(--hero-color-brown);
+}
+.legal .legal-text h2 {
+  font-family: 'HP Simplified Light', sans-serif;
+  font-weight: 300;
+  font-size: 30px;
+  margin-top: 0px; 
+  margin-bottom: 0px;
+  color: var(--hero-color-brown);
+}
+
+/* PROJECT COLORS #392526ff; */
+.automotive { background-color: #536654ff; }
+.lostdot { background-color: #a0b7b0ff; }
+.cutecounter { background-color: #e0718cff; }
+.intercom { background-color: var(--hero-color-choco)}
+.sam { background-color: #aaaaaaff; }
+
+.hero .back-to-top-label {
+  color: var(--basic-color-creme);
+}
+.automotive .back-to-top-label {
+  color: var(--basic-color-creme);
+}
+.lostdot .back-to-top-label {
+  color: var(--basic-color-white-iniy);
+}
+.cutecounter .back-to-top-label {
+  color: var(--cutecounter-color-blue);
+}
+.intercom .back-to-top-label {
+  color: var(--basic-color-creme);
+}
+.sam .back-to-top-label {
+  color: var(--sam-color-yellow);
+}
+
+
+/* TEXT COLORS */
+.hero .project-text * {
+  color: var(--hero-color-blue);
+}
+.automotive .project-text * {
+  color: var(--basic-color-creme);
+}
+.lostdot .project-text * {
+  color: var(--lostdot-color-green-moss);
+}
+.cutecounter .project-text * {
+  color: var(--basic-color-white);
+}
+.intercom .project-text * {
+  color: var(--basic-color-white);
+}
+.sam .project-text * {
+  color: var(--basic-color-white);
+}
+
+/* one-line COLORS */
+.hero .one-line {
+  color: var(--hero-color-blue);
+}
+.automotive .one-line {
+  color: var(--automotive-color-pink);
+}
+.lostdot .one-line {
+  color: var(--lostdot-color-green-matcha);
+}
+.cutecounter .one-line {
+  color: var(--cutecounter-color-marin);
+}
+.intercom .one-line {
+  color: var(--intercom-color-marin);
+}
+.sam .one-line {
+  color: var(--sam-color-grey-dark);
+}
+
+/* h2 COLORS */
+.hero .project-text h1 {
+  color: var(--hero-color-brown);
+}
+.hero .project-text h2 {
+  color: var(--hero-color-brown);
+}
+.lostdot .project-text h2 {
+  color: var(--lostdot-color-green-iniy);
+}
+
+
+/* =========================
+   BACK TO TOP
+========================= */
+
+.section-ui {
+  position: absolute;
+  inset: 0; /* füllt die Section */
+  padding-top: 70px;   /* Abstand oben */
+  padding-bottom: 70px; /* Abstand unten */
+  pointer-events: none; /* Overlay blockiert nicht das Video */
+}
+.back-to-top {
+  position: sticky; /* oder absolute */
+  top: 70px; /* Abstand zum Viewport */
+  z-index: 1000;
+  width: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  pointer-events: auto;
+}
+
+.back-to-top img {
+  width: 100%;
+  height: auto;
+}
+
+.back-to-top span {
+  font-size: 35px;
+  writing-mode: vertical-rl;
+  font-family: 'HP Simplified Light', sans-serif;
+  font-weight: 300;
+  font-size: 42px;
+  color: var(--basic-color-creme);
+}
+
+/* RIGHT */
+.back-to-top--right {
+  margin-left: auto;
+  margin-right: 30px;
+}
+
+/* LEFT (rotate 180°) */
+.back-to-top--left {
+  margin-right: auto;
+  margin-left: 30px;
+  transform: rotate(180deg);
+}
+
+/* =========================
+   CONTENT
+========================= */
+
+.project-layout, .hero-layout {
+  position: absolute;
+  inset: 0; /* füllt die Section */
+  z-index: 12;
+  padding-top: 100px;   /* Abstand oben */
+  padding-bottom: 70px; /* Abstand unten */
+}
+
+
+/* =========================
+   HERO image main
+========================= */
+.hero-image-main {
+  margin: 0 350px 0 80px;
+}
+.hero-image-main img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* =========================
+   section image main
+========================= */
+.section-image-main {
+  margin: 0 350px 0 80px;
+}
+.section-image-main img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* =========================
+   video
+========================= */
+.project-video {
+  margin: 0 350px 0 80px;
+}
+.project-video video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  display: block;
+}
+
+  /* =========================
+   text
+========================= */
+ .project-text {
+	margin: 50px 370px 0 80px;
+	display: flex;
+	gap: 80px;
+}
+
+.hero .project-text { /* gleiche Breite..................................!!! */
+	margin: 0 370px 0 80px;
+	display: flex;
+	gap: 50px;
+}
+.legal .legal-text { /* gleiche Breite..................................!!! */
+	margin: 0 0 0 80px;
+}
+.project-text-top,
+.project-text-block {
+  flex: 1;          /* gleiche Breite */
+  display: flex;
+  flex-direction: column; /* Inhalte vertikal gestapelt */
+  gap: 20px;        /* Abstand zwischen Überschrift & Texten */
+}
+
+h1 {
+  font-family: 'HP Simplified Light', sans-serif;
+  font-weight: 300;
+  font-size: 58px;
+  margin-top: 50px; 
+  margin-bottom: 50px;
+  margin-right: 100px; 
+  /* Abstand unter Überschrift */
+}
+
+h2 {
+  font-family: 'HP Simplified Light', sans-serif;
+  font-weight: 300;
+  font-size: 50px;
+  margin-top: 5px; 
+  margin-bottom: 0px;   /* Abstand unter Überschrift */
+}
+
+.two-lines {	
+  font-family: 'HP Simplified Light', sans-serif;
+  font-weight: 300;
+  font-size: 30px;
+  margin-top: 0px; 
+  margin-bottom: 0px;
+}
+.one-line {	
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 22px;
+    margin-top: 0px; 
+  margin-bottom: 0px;
+}
+
+.project-text-block {	
+  font-family: 'HP Simplified Light', sans-serif;
+  font-weight: 300;
+  font-size: 22px;
+}
+
+/* =========================
+   image bottom
+========================= */
+.section-image-bottom {
+  margin: 100px 100px 200px 320px;
+}
+
+.section-image-bottom img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero-image-bottom {
+  margin: 150px 0 0 0;
+}
+
+.hero-image-bottom img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* =========================
+   PARALLAX SECTION
+========================= */
+.section-sticky-ui {
+  position: absolute;
+  inset: 0; /* füllt die Section */
+  
+}
+.sticky-image {
+  position: sticky; /* oder absolute */
+  top: 70px; /* Abstand zum Viewport !!!! */ 
+  z-index: 10;
+  width: 100%;             ;
+}
+
+.fixed-image {
+  width: 2rem;
+  height: auto;
+  margin: 0px 0 0 0px;
+  z-index: 9;
+}
+.hero .fixed-image
+{
+    margin: 500px 0 0 800px;
+}
+.automotive .fixed-image
+{
+   margin: 500px 500px 500px 300px;
+}
+.lostdot .fixed-image
+{
+   margin: 70px 0 0 300px;
+}
+.cutecounter .fixed-image
+{
+   margin: 250px 0 0 755px;
+}
+.legal .fixed-image
+{
+    margin: 500px 0 0 800px;
+	
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+
+
+/* =========================
+   page
+========================= */
+
+/* =========================
+   project und hero
+========================= */
+.section { 
+position: relative; 
+width: 100%; 
+min-height: 1400px; /* Desktop Höhe */ 
+padding-top: 70px; /* Abstand oben */ 
+padding-bottom: 70px; /* Abstand unten */ 
+margin-top: 10px; 
+}
+
+.hero { 
+position: relative; 
+width: 100%; 
+min-height: 1300px; /* Desktop Höhe */ 
+padding-top: 70px; /* Abstand oben */ 
+padding-bottom: 70px; /* Abstand unten */ 
+margin-top: 10px; 
+}
+
+.hero {
+  height: 1300px;
+  background-color: var(--hero-color-choco);
+  background-image: url('SVG/waves_blue_720_1920.svg');
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: left 200px bottom 155px;
+  background-size: 100% 100%;
+}
+
+
+ .hero-layout {
+  position: absolute;
+  inset: 0; /* füllt die Section */
+  z-index: 12;
+  padding-top: 0px;   /* Abstand oben <<<<<<<<<<<<<<<<<<*/
+  padding-bottom: 70px; /* Abstand unten */
+} 
+
+/* =========================
+   paralax
+========================= */
+
+
+
+/* =========================
+   hero
+========================= */
+
+.hero-image-main {
+   margin: 0 0 0 0px; 
+}
+
+.hero .project-text {
+    margin: 30px;
+    flex-direction: column;
+    gap: 0px;
+}
+.hero .project-text { /* gleiche Breite..................................!!! */
+	margin: 0 370px 0 80px;
+	display: flex;
+	gap: 50px;
+}
+  
+.hero .project-text {
+   margin: 0px 50px 0px 30px;
+ }
+ 
+.hero .sticky-image
+{
+ margin: 0px 0px 0px 0px ;
+}
+.hero .fixed-image
+{
+ margin: 380px 60px 0 250px ;
+}
+.hero .sun {
+  width: 200px;
+  height: auto;
+  margin: 0 0 0 120px ;
+}
+
+.hero-image-bottom {
+  margin: 60px 0 0 0;
+
+}
+
+.hero .wind {
+  width: 800px;
+  height: auto;
+  margin: 0 0 700px 120px ;
+}
+
+/* =========================
+   BACK TO TOP
+========================= */
+
+  .back-to-top--right {
+    margin-right: 10px;
+  }
+
+  .back-to-top--left {
+    margin-left: 10px;
+  }
+  
+  /* =========================
+   project
+========================= */
+	.project-video {
+    margin: 0 0 0 0;
+  }
+  
+  .section-image-main {
+   margin: 0 80px 0 20px;
+}
+  
+  .project-text {
+    margin: 30px;
+    flex-direction: column;
+    gap: 50px;
+  }
+  
+  .section-image-bottom {
+    margin: 0 20px 0 20px;
+  }
+  .cutecounter .fixed-image
+{
+   margin: 350px 0 0 200px;
+}
+ .cutecounter .apleicon{
+  width: 400px;
+  height: auto;
+  margin: 0 0 0 0 ;
+}
+
+
+/* =========================
+   legal
+========================= */
+.legal {
+  height: 1800px;
+  background-color: var(--hero-color-choco);
+  background-image: url('SVG/waves_blue_720_1920.svg');
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: right 0 bottom 0;  
+}
+.legal .legal-text {
+	margin: 0 50px 0 20px;
+}
+  .legal .legal-text * {
+  width: 100%;
+}
+.legal .legal-text h1 {
+  font-size: 42px;
+  margin-bottom: 50px;
+}
+.legal .legal-text h2 {
+  font-size: 30px;  
+}
+.legal .sticky-image
+{
+ margin: 0px 0px 0px 0px ;
+}
+.legal .fixed-image
+{
+ margin: 100px 40px 0 200px ;
+}
+.legal .sun {
+  width: 10px;
+  height: auto;
+  margin: 0 0 0 120px ;
+}
