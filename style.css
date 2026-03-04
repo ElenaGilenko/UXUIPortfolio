@@ -478,7 +478,7 @@ margin-top: 0; /* ----> 10px*/
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(255, 0, 0, 0.3);
+
 }
 .fixed-image {
   position: absolute;
@@ -498,7 +498,7 @@ margin-top: 0; /* ----> 10px*/
 }
 .sticky-image
 { 
- background: rgba(0, 0, 255, 0.3);
+ 
   margin: 0 0 0 0;
 }
 
@@ -507,7 +507,7 @@ margin-top: 0; /* ----> 10px*/
 .section-sticky-ui {
   position: absolute;
   inset: 0; /* füllt die Section */
-  background: rgba(0, 255, 255, 0.3);
+ 
  
 }
 .sticky-image {
