@@ -1,11 +1,9 @@
 /* =========================
    GLOBAL
 ========================= */
-
 * {
   box-sizing: border-box;
 }
-
 body {
   margin: 0;
   padding: 0;
@@ -16,7 +14,6 @@ body {
 /* =========================
    PAGE CONTAINER
 ========================= */
-
 .container-page {
   position: relative;
   width: 100%;
@@ -26,7 +23,6 @@ body {
   display: flex;
   flex-direction: column;
 }
-
 /* =========================
    SECTIONS
 ========================= */
@@ -44,11 +40,7 @@ margin-top: 10px;
 }
 .hero {
   background-color: var(--hero-color-choco);
-  background-image: url('svg/waves_blue_720_1920.svg');
-  background-repeat: no-repeat;
-  background-size: auto;
-  background-position: left 200px bottom 155px;
-  background-size: 100% 100%;
+
  
 }
 .legal {
@@ -819,6 +811,7 @@ margin-top: 0; /* ----> 10px*/
   height: auto;
   margin: 0 0 0 120px ;
 }
+
 
 
 
