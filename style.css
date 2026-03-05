@@ -23,6 +23,8 @@ body {
   height:auto;
   max-width: 1440px;
   margin: 10px auto;
+  display: flex;
+  flex-direction: column;
 }
 
 /* =========================
@@ -601,6 +603,7 @@ margin-top: 0; /* ----> 10px*/
   height: auto;
   margin: 0 0 0 120px ;
 }
+
 
 
 
