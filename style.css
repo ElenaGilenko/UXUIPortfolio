@@ -10,7 +10,22 @@ body {
   font-family: Arial, sans-serif;
   overflow-x: hidden;
 }
-
+/* =========================
+   FIXED BACKGROUND   background-color: rgba(255 0 0 / 0.5);
+========================= */
+.container-base {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background-color: #e2dcd1ff;
+  background-image: url('SVG/waves_white_3840_1080.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 /* =========================
    PAGE CONTAINER
 ========================= */
@@ -181,6 +196,7 @@ body {
   display: flex;
   gap: 80px;
   margin: 50px 370px 0 80px;
+
 }
 .hero .project-text { /* gleiche Breite..................................!!! */
   gap: 50px;
@@ -212,6 +228,9 @@ h2 {
   font-size: 50px;
   margin-top: 5px; 
   margin-bottom: 0px;   /* Abstand unter Überschrift */
+  max-width: 100%;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 .two-lines {	
   font-family: 'HP Simplified Light', sans-serif;
@@ -266,19 +285,16 @@ h2 {
 .section-sticky-ui {
   position: absolute;
   inset: 0; /* füllt die Section */
-   background-color: rgba(0 0 255 / 0.5);
 }
 .sticky-image {
   position: sticky; /* oder absolute */
   top: 70px; /* Abstand zum Viewport !!!! */ 
   z-index: 1;
   width: 100%;
-  background-color: rgba(0 255 0 / 0.5);
 }
 .fixed-image {
   position: absolute;
   z-index: 0;
-  background-color: rgba(255 0 0 / 0.5);
 }
 .hero .fixed-image {
   top: 28%;
@@ -340,8 +356,7 @@ h2 {
     max-width: 100%;/* überschreibt das Desktop max-width */
     padding: 0; /* optional, minimaler Abstand zum Rand */
 	display: flex;
-	flex-direction: column;	
-    background-color: rgba(255 255 0 / 0.5);
+	flex-direction: column;
 }
 /* =========================
    project und hero
@@ -456,8 +471,6 @@ h2 {
 }
 
 }
-
-
 
 
 
