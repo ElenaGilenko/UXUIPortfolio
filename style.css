@@ -217,7 +217,6 @@ margin-top: 10px;
   z-index: 2;
   padding-top: 100px;   /* Abstand oben */
   padding-bottom: 70px; /* Abstand unten */
-
 }
 
 
@@ -225,7 +224,7 @@ margin-top: 10px;
    HERO image main
 ========================= */
 .hero-image-main {
-  margin: 0 350px 0 80px;
+  margin: 0 350px 0 0px;
 }
 .hero-image-main img {
   width: 100%;
@@ -601,6 +600,7 @@ margin-top: 0; /* ----> 10px*/
   height: auto;
   margin: 0 0 0 120px ;
 }
+
 
 
 
