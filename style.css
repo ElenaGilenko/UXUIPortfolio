@@ -38,12 +38,10 @@ padding-top: 70px; /* Abstand oben */
 padding-bottom: 70px; /* Abstand unten */ 
 margin-top: 10px; 
 }
-
 .hero, .project {
   position: relative; 
   height: auto;
 }
-
 .hero {
   background-color: var(--hero-color-choco);
   background-image: url('svg/waves_blue_720_1920.svg');
@@ -53,7 +51,13 @@ margin-top: 10px;
   background-size: 100% 100%;
  
 }
-
+.project-layout, .hero-layout {
+  position: relative;
+  inset: 0; /* füllt die Section */
+  z-index: 2;
+  padding-top: 0px;   /* Abstand oben */
+  padding-bottom: 0px; /* Abstand unten */
+}
 .legal {
   background-color: var(--hero-color-choco);
   background-image: url('svg/waves_blue_720_1920.svg');
@@ -62,7 +66,6 @@ margin-top: 10px;
   background-position: left 200px bottom 0px;
   background-size: 100% 100%;
 }
-
 .legal .legal-text * {
   width: 70%;
   font-family: 'HP Simplified Light', sans-serif;
@@ -604,6 +607,7 @@ margin-top: 0; /* ----> 10px*/
   height: auto;
   margin: 0 0 0 120px ;
 }
+
 
 
 
