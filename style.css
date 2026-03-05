@@ -20,8 +20,8 @@ body {
 .container-page {
   position: relative;
   width: 100%;
-  height:auto;
   max-width: 1440px;
+  height:auto;
   margin: 10px auto;
   display: flex;
   flex-direction: column;
@@ -39,9 +39,12 @@ padding-bottom: 70px; /* Abstand unten */
 margin-top: 10px; 
 }
 
-.hero {
+.hero, .project {
   position: relative; 
   height: auto;
+}
+
+.hero {
   background-color: var(--hero-color-choco);
   background-image: url('svg/waves_blue_720_1920.svg');
   background-repeat: no-repeat;
@@ -52,8 +55,6 @@ margin-top: 10px;
 }
 
 .legal {
-  position: relative; 
-  height: auto;
   background-color: var(--hero-color-choco);
   background-image: url('svg/waves_blue_720_1920.svg');
   background-repeat: no-repeat;
@@ -603,6 +604,7 @@ margin-top: 0; /* ----> 10px*/
   height: auto;
   margin: 0 0 0 120px ;
 }
+
 
 
 
