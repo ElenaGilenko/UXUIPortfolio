@@ -359,7 +359,7 @@ h2 {
 .section { 
   position: relative; 
   width: 100%; 
-  min-height: auto; /* Desktop Höhe      ---->  1980px*/
+   min-height: 100vh; /* Bildschirm Höhe /
   padding-top: 0px; /* Abstand oben */ 
   padding-bottom: 70px; /* Abstand unten */ 
   margin-top: 0; /* ----> 10px*/
@@ -444,7 +444,7 @@ h2 {
   display: none;
 }
 .one-line {
-
+  display: none;
 }
 .mobile-skills-text {
   display: block;
