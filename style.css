@@ -21,10 +21,9 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  right: 0;
+  bottom: 0;
   z-index: -1;
-
   background-color: #e2dcd1ff;
   background-image: url('SVG/waves_white_3840_1080.svg');
   background-repeat: no-repeat;
@@ -434,9 +433,6 @@ h2 {
 
 @media (max-width: 768px) {
 
-.container-base {
-display:none;
-}
 
 /* =========================
    page
@@ -444,7 +440,7 @@ display:none;
 .container-page {
 	position: relative; 
     margin: 0;       /* entfernt zentrierte Ränder */
-    max-width: 100vw;/* überschreibt das Desktop max-width */
+    max-width: 100%;/* überschreibt das Desktop max-width */
     padding: 0; /* optional, minimaler Abstand zum Rand */
 	display: flex;
 	flex-direction: column;
@@ -514,7 +510,7 @@ margin-top: 0; /* ----> 10px*/
 }
 
 .lostdot .fixed-image {
-  width: 100%;
+  width: 80%;
   height: 100%;
   margin: 0;
   display: flex;
@@ -527,14 +523,6 @@ margin-top: 0; /* ----> 10px*/
 }
 
 
-.fixed-image-mobile{
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  display: flex;
-  justify-content: center; /* horizontal */
-  align-items: center; 
-}
 
 .cutecounter .fixed-image {
   width: 100%;
@@ -629,11 +617,11 @@ margin-top: 0; /* ----> 10px*/
   width: 100%;
 }
 .legal .legal-text h1 {
-  font-size: 32px;
+  font-size: 42px;
   margin-bottom: 50px;
 }
 .legal .legal-text h2 {
-  font-size: 26px;  
+  font-size: 30px;  
 }
 .legal .sticky-image
 {
