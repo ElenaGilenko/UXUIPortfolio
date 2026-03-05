@@ -14,44 +14,6 @@ body {
 }
 
 /* =========================
-   FIXED BACKGROUND
-========================= */
-
-.container-base {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
-  background-color: #e2dcd1ff;
-  background-image: url('svg/waves_white_3840_1080.svg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-/* =========================
-   FOOTER
-========================= */
-
-footer{
-  position: relative;
-  z-index: 0;
-  width: 100%;
-  max-width: 1440px;
-  min-height: 100px;
-  margin: 10px auto;
-  
-  background-color: var(--hero-color-choco);
-  
-  display: flex;
-  justify-content: center;
-  color: var(--basic-color-creme);
-}
-
-
-/* =========================
    PAGE CONTAINER
 ========================= */
 
@@ -68,14 +30,15 @@ footer{
 .section { 
 position: relative; 
 width: 100%; 
-min-height: 1800px; /* Desktop Höhe */ 
+height:auto; /* Desktop Höhe */ 
 padding-top: 70px; /* Abstand oben */ 
 padding-bottom: 70px; /* Abstand unten */ 
 margin-top: 10px; 
 }
 
 .hero {
-  height: 2000px;
+  position: relative; 
+  height: auto;
   background-color: var(--hero-color-choco);
   background-image: url('svg/waves_blue_720_1920.svg');
   background-repeat: no-repeat;
@@ -86,7 +49,8 @@ margin-top: 10px;
 }
 
 .legal {
-  height: 1500px;
+  position: relative; 
+  height: auto;
   background-color: var(--hero-color-choco);
   background-image: url('svg/waves_blue_720_1920.svg');
   background-repeat: no-repeat;
@@ -636,5 +600,6 @@ margin-top: 0; /* ----> 10px*/
   height: auto;
   margin: 0 0 0 120px ;
 }
+
 
 
