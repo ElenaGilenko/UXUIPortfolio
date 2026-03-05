@@ -236,7 +236,7 @@ margin-top: 10px;
    section image main
 ========================= */
 .section-image-main {
-  margin: 0 350px 0 80px;
+  margin: 0 350px 0 0px;
 }
 .section-image-main img {
   width: 100%;
@@ -600,6 +600,7 @@ margin-top: 0; /* ----> 10px*/
   height: auto;
   margin: 0 0 0 120px ;
 }
+
 
 
 
