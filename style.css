@@ -20,6 +20,7 @@ body {
 .container-page {
   position: relative;
   width: 100%;
+  height:auto;
   max-width: 1440px;
   margin: 10px auto;
 }
@@ -600,6 +601,7 @@ margin-top: 0; /* ----> 10px*/
   height: auto;
   margin: 0 0 0 120px ;
 }
+
 
 
 
