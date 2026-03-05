@@ -137,11 +137,10 @@ body {
   height: auto;
 }
 .back-to-top span {
-  font-size: 35px;
   writing-mode: vertical-rl;
   font-family: 'HP Simplified Light', sans-serif;
   font-weight: 300;
-  font-size: 42px;
+  font-size: 35px;
   color: var(--basic-color-creme);
 }
 /* RIGHT */
@@ -198,21 +197,17 @@ body {
   margin: 50px 370px 0 80px;
 
 }
-.hero .project-text { /* gleiche Breite..................................!!! */
-  gap: 50px;
-}
 .legal .legal-text { /* gleiche Breite..................................!!! */
   margin: 0 0 0 80px;
 }
 .project-text-top,
-.project-text-block,
-.mobile-skills-text {
+.project-text-block {
   flex: 1;          /* gleiche Breite */
   display: flex;
   flex-direction: column; /* Inhalte vertikal gestapelt */
   gap: 20px;        /* Abstand zwischen Überschrift & Texten */
 }
-.hero .mobile-skills-text {
+.mobile-skills-text {
   display: none; /* mobile-skills-text versus two-lines for desktop */
 }
 h1 {
@@ -242,7 +237,7 @@ h2 {
 .one-line {	
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 22px;
-    margin-top: 0px; 
+  margin-top: 0px; 
   margin-bottom: 0px;
 }
 .project-text-block {	
@@ -394,6 +389,16 @@ h2 {
 /* =========================
    BACK TO TOP
 ========================= */
+.section-ui {
+  padding-top: 10px;
+}
+.back-to-top {
+  top: 10px; /* Abstand zum Viewport */
+  width: 25px;
+}
+.back-to-top span {
+  font-size: 25px;
+}
 .back-to-top--right {
   margin-right: 10px;
 }
@@ -413,9 +418,9 @@ h2 {
   margin: 0 80px 0 20px;
 }
 .project-text {
-  margin: 30px;
+  margin: 0 45px 0 20px;
   flex-direction: column;
-  gap: 50px;
+  gap:0px;
 }
 .section-image-bottom {
   margin: 0 20px 0 20px;
@@ -429,10 +434,17 @@ h2 {
 .hero .project-text {
   flex-direction: column;
   gap: 0px;
-  margin: 0px 30px 0px 30px;
+  margin: 0 20px 0px 20px;
+  
 }
-.two-lines {	
+.hero .project-text-top, .project-text-block {
+  gap: 0;        /* Abstand zwischen Überschrift & Texten */
+}
+.two-lines, .project-text-block {	
   display: none;
+}
+.one-line {
+
 }
 .mobile-skills-text {
   display: block;
@@ -440,12 +452,12 @@ h2 {
 .mobile-skills-text {	
   font-family: 'HP Simplified Light', sans-serif;
   font-weight: 300;
-  font-size: 30px;
+  font-size: 20px;
   margin-top: 0px; 
-  margin-bottom: 0px;
+  margin-bottom: 10px;
 }
 .hero-image-bottom {
-  margin: 0px 0 0 0;
+  margin: 0 0 0 0;
 }
 
 /* =========================
