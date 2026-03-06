@@ -359,14 +359,17 @@ h2 {
 .section { 
   position: relative; 
   width: 100%; 
-   min-height: 100vh; /* Bildschirm Höhe /
+  min-height: 100vh; /* Jede Section füllt mindestens den ganzen Bildschirm.*/
   padding-top: 0px; /* Abstand oben */ 
   padding-bottom: 70px; /* Abstand unten */ 
   margin-top: 0; /* ----> 10px*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .hero, .project {
   position: relative; 
-  height: auto;
+  min-height: 100vh;
 }
 .project-layout, .hero-layout {
   position: relative;
@@ -385,12 +388,6 @@ h2 {
   left: 0;
   width: 100%;
   height: 100%
-}
-.hero .fixed-image {
-  top: 35%;
-  left: 55%;
-  width: 27%;
-  height: 27%;  
 }
 /* =========================
    BACK TO TOP
@@ -446,11 +443,11 @@ h2 {
 .hero .project-text-top, .project-text-block {
   gap: 0;        /* Abstand zwischen Überschrift & Texten */
 }
-.two-lines, .project-text-block {	
+.hero .two-lines, .hero .project-text-block {	
   display: none;
 }
-.one-line {
-  display: none;
+.hero .one-line {
+display: none;
 }
 .mobile-skills-text {
   display: block;
