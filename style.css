@@ -359,17 +359,13 @@ h2 {
 .section { 
   position: relative; 
   width: 100%; 
-  min-height: 100dvh; /* Jede Section füllt mindestens den ganzen Bildschirm.*/
+  min-height: 100vh; /* Jede Section füllt mindestens den ganzen Bildschirm.*/
   padding-top: 0px; /* Abstand oben */ 
   padding-bottom: 70px; /* Abstand unten */ 
   margin-top: 0; /* ----> 10px*/
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 .hero, .project {
   position: relative; 
-  min-height: 100dvh;
 }
 .project-layout, .hero-layout {
   position: relative;
