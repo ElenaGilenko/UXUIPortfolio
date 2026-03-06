@@ -490,7 +490,6 @@ display: none;
 .legal {
   height: auto;
   background-size: auto;
-  background-image: none;  
 }
 .legal .legal-text {
   margin: 0 50px 0 20px;
@@ -507,6 +506,7 @@ display: none;
 }
 
 }
+
 
 
 
