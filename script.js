@@ -10,3 +10,21 @@ document.querySelectorAll('.back-to-top').forEach(button => {
   });
 
 });
+
+const videos = document.querySelectorAll(".section-video");
+
+videos.forEach(video => video.pause());
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    const video = entry.target;
+
+    if (entry.isIntersecting) {
+      video.play();
+    } else {
+      video.pause();
+    }
+  });
+}, { threshold: 0.5 });
+
+videos.forEach(video => observer.observe(video));
