@@ -392,7 +392,7 @@ h2 {
   padding-top: 10px;
 }
 .back-to-top {
-  top: 10px; /* Abstand zum Viewport */
+  top: 500px; /* Abstand zum Viewport */
   width: 25px;
 }
 .back-to-top span {
