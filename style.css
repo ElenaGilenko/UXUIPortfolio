@@ -437,6 +437,15 @@ h2 {
   flex-direction: column;
   gap:0px;
 }
+.two-lines {	
+ font-size:22px
+}
+.one-line {
+font-size:18px
+}
+ .project-text-block {
+ font-size:18px        /* Abstand zwischen Überschrift & Texten */
+}
 .section-image-bottom {
   margin: 0 20px 0 20px;
 }
