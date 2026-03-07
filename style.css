@@ -104,12 +104,12 @@ body {
 .lostdot .one-line {  color: var(--lostdot-color-green-matcha);}
 .cutecounter .one-line {  color: var(--cutecounter-color-marin);}
 .intercom .one-line {  color: var(--intercom-color-marin);}
-.sam .one-line {  color: var(--sam-color-grey-dark);}
+.sam .one-line {  color: var(--sam-color-yellow);}
 /* HEADERs COLORS */
 .hero .project-text h1 {  color: var(--hero-color-brown);}
 .hero .project-text h2 {  color: var(--hero-color-brown);}
 .lostdot .project-text h2 {  color: var(--lostdot-color-green-iniy);}
-
+.sam .two-lines {  color: var(--sam-color-grey-dark);}
 
 /* =========================
    BACK TO TOP
@@ -489,7 +489,7 @@ display: none;
 ========================= */
 .legal {
   height: auto;
-  background-size: auto;
+  background-size: auto;  
 }
 .legal .legal-text {
   margin: 0 50px 0 20px;
@@ -506,7 +506,6 @@ display: none;
 }
 
 }
-
 
 
 
