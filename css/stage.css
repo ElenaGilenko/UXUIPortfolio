@@ -15,17 +15,18 @@
   transition: transform 1s ease;
   background-size: cover;
   background-position: center;
-  border-radius: 14px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  border-radius: 10px;
+  
   transition: transform 1s ease;
 }
 .p1 {
   position: relative;
   width:33%;
   height:100%;
-    display:flex;
-  justify-content:center;
-  align-items:flex-start;
+  box-shadow: -5px 0 5px rgba(0,0,0,0.2);
+}
+.p2 {
+  box-shadow: -5px 0 5px rgba(0,0,0,0.2);
 }
 /* z-index */
 .p3 { z-index:3; left: 0; }   /* fix links */
@@ -57,6 +58,6 @@
 
 @media (max-width: 768px) {
 .panel {
-  border-radius: 7px;
+  border-radius: 5px;
 }
 }
