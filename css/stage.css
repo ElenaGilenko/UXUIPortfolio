@@ -54,3 +54,9 @@
   height:auto;
   width:67%; 
 }
+
+@media (max-width: 768px) {
+.panel {
+  border-radius: 7px;
+}
+}
