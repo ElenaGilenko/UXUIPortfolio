@@ -15,7 +15,7 @@ const videos = document.querySelectorAll(".section-video");
 
 videos.forEach(video => video.pause());
 
-const observer = new IntersectionObserver((entries) => {
+const videoObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     const video = entry.target;
 
@@ -27,4 +27,18 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.5 });
 
-videos.forEach(video => observer.observe(video));
+videos.forEach(video => videoObserver.observe(video));
+
+
+/* section bottm stage*/
+const stage = document.querySelector('.stage');
+
+const stageObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if(entry.intersectionRatio >= 0.5){
+      stage.classList.add('move'); // Animation starten
+    }
+  });
+}, { threshold: 0.5 });
+
+stageObserver.observe(stage);
