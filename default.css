@@ -1,55 +1,451 @@
-@charset "utf-8";
+<!DOCTYPE html>
+<html lang="de">
+<head>
 
-@font-face {
-  font-family: 'HP Simplified Light';
-  src: url('fonts/HP Simplified Light.woff2') format('woff2'),
-       url('fonts/HP Simplified Light.woff') format('woff');
-  font-weight: 300;
-  font-style: normal;
-}
+<meta charset="UTF-8">
+<title>Elena Gilenko – UX/UI Designer Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Portfolio von Elena Gilenko – UX/UI Design, Web Design und Frontend Development.">
+
+ <!-- FAVICON -->
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+  
+  <link rel="stylesheet" href="default.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="css/stage.css">
+
+</head>
+
+<body>
+
+  <!-- FIXED BACKGROUND -->
+  <div class="container-base"></div>
+  
+  <!-- PAGE CONTENT -->
+<main class="container-page">
+    
+		<!-- HERO -->
+		<section class="section hero">
+	
+			<!-- PARALLAX SECTION -->
+			<div class="section parallax">
+			
+				<!-- Sticky Image Layer -->
+				<div class="section-sticky-ui">
+					<div class="sticky-image">
+						<img src="svg/waves_choco_1440_700.svg" class="wind" alt="Wellen Choco">
+					</div>
+				</div>
+
+				<!-- Fixed Image Layer -->
+				<div class="fixed-image">
+					<img src="svg/emblem_circle_brown_340_340.svg" class="sun"  alt="Kreis Braun">
+				</div>
+			</div>
+
+						<!-- BACK TO TOP -->
+			<div class="section-ui">
+				<div class="back-to-top back-to-top--right">
+					<img src="svg/back_to_top_hero_icon.svg" alt="Kreis Braun Klein">
+					<span class="back-to-top-label">Portfolio UXUI</span>
+				</div>
+			</div>
+	  
+			<!-- CONTENT -->
+			<div class="hero-layout">
+
+				<!-- IMAGE MAIN-->
+				<div class="hero-image-main">
+					<img src="img/hero_image_main.png" alt="Portrait von Elena Gilenko, UX/UI Designerin">
+				</div>
+
+				<!-- TEXT -->
+				<div class="project-text">
+
+					<div class="project-text-top">
+
+						<h2 >Elena Gilenko</h2>
+						<p class="two-lines">
+							Frontend Developer · UX/UI Design<br>
+							Webdesign · Grafikdesign · Videografie</p>
+						<p class="mobile-skills-text">Frontend Developer<br>UX/UI · Grafik<br>Webdesign<br>Videografie</p>
+						<p class="one-line">the wind in your sails</p>
+					</div>
+
+					<div class="project-text-block">
+						<p>
+						
+						</p>
+					</div>
+
+				</div>
+
+				<!-- IMAGE -->
+				<div class="hero-image-bottom">
+					<img src="img/hero_image.png" alt="Grafik von Elena Gilenko, Bäume">
+				</div>
+			</div>
+	
+		</section>
 
 
-:root {
+		<!-- AUTOMOTIVE -->
+		<section class="section automotive">
 
---basic-color-creme:#e2dcd1;
---basic-color-white:#ffffff;
---basic-color-white-iniy:#f0fcfa;
+			<!-- PARALLAX SECTION -->
+			<section class="section parallax">
 
---automotive-color-green:#536654;
---automotive-color-pink:#a26374;
+				<!-- Sticky Image Layer -->
+				<div class="section-sticky-ui">
+					<div class="sticky-image">
+						<img src="svg/default.svg" alt="default">
+					</div>
+				</div>
 
---hero-color-brown:#936654;
---hero-color-choco:#312f2e;
---hero-color-blue:#6e879d;
+				<!-- Fixed Image Layer -->
+				<div class="fixed-image">
+					<img src="svg/default.svg" alt="default">
+				</div>
 
---lostdot-color-green-iniy:#f6f7f8;
---lostdot-color-green-mint:#a0b7b0;
---lostdot-color-green-matcha:#6f807c;
---lostdot-color-green-moss:#2e372f;
---lostdot-color-orange:#f5af5e;
+			</section>
 
---cutecounter-color-pink:#e0718c;
---cutecounter-color-blue:#c7daf4;
---cutecounter-color-marin:#5b7384;
+			<!-- BACK TO TOP -->
+			<div class="section-ui">
+				<div class="back-to-top back-to-top--right">
+					<img src="svg/back_to_top_automotive_icon.svg" alt="">
+					<span class="back-to-top-label">Automotive</span>
+				</div>
+			</div>
+
+	  
+			<!-- CONTENT -->
+			<div class="project-layout">
+
+				<!-- VIDEO -->
+				<div class="project-video">
+					<video class="section-video" autoplay muted loop playsinline preload="metadata" controls>
+						<source src="video/automotive_video.mp4" type="video/mp4">
+					</video>
+				</div>
+
+				<!-- TEXT -->
+				<div class="project-text">
+
+					<div class="project-text-top">
+						<h2 >Automotive</h2>
+						<p class="two-lines">Gestaltung digitaler Infotainment- und HMI-Systeme im Fahrzeug.</p>
+						<p class="one-line">Im Auftrag von CARIAD / VW Group</p>
+					</div>
+
+					<div class="project-text-block">
+						<p>
+						Screenlayouts, UI-Komponenten und grafische Assets entstehen auf Basis definierter Styleguides und technischer Anforderungen. Der Fokus liegt auf klar strukturierten Interfaces, konsistenter visueller Gestaltung und der präzisen Spezifikation von Benutzeroberflächen für moderne Infotainment-Systeme im Automotive-Umfeld.</p>
+					</div>
+
+				</div>
+
+				<!-- IMAGE -->
+				<div class="section-image-bottom">
+					<img src="img/automotive_image.png" alt="">
+				</div>
+
+			</div>
+	  
+		</section>
+		
+		
+		<!-- LOST DOT -->
+		<section class="section lostdot">
+	
+			<!-- PARALLAX SECTION -->
+			<section class="section parallax">
+
+				<!-- Sticky Image Layer -->
+				<div class="section-sticky-ui">
+					<div class="sticky-image">
+						<img src="svg/default.svg" alt="default" >
+					</div>
+				</div>
+
+				<!-- Fixed Image Layer -->
+				<div class="fixed-image">
+					<img src="svg/emblem_lostdot_1000_1000.svg" class="lostdoticon" alt="Kreis Orange">
+				</div>
+								<!-- Fixed Image Layer -->
+				<div class="fixed-image-mobile">
+					<img src="svg/emblem_lostdot_half.svg" class="halflostdotemblem" alt="Kreis Orange">
+				</div>
 
 
---intercom-color-choco:#392526;
---intercom-color-marin:#5b7384;
+			</section>
 
---sam-color-grey-light:#7a7a7a;
---sam-color-grey-dark:#2d2d2d;
---sam-color-yellow:#f4c749;
+			<!-- BACK TO TOP -->
+			<div class="section-ui">
+				<div class="back-to-top back-to-top--right">
+					<img src="svg/back_to_top_lostdot_icon.svg" alt="">
+					<span class="back-to-top-label">Lost Dot</span>
+				</div>
+			</div>
+	  
+			<!-- CONTENT -->
+			<div class="project-layout">
+
+				<!-- VIDEO -->
+				<div class="project-video">
+					<video class="section-video" autoplay muted loop playsinline preload="metadata">
+						<source src="video/lostdot_video.mp4" type="video/mp4">
+					</video>
+				</div>
+
+				<!-- TEXT -->
+				<div class="project-text">
+
+					<div class="project-text-top">
+						<h2 >Lost Dot</h2>
+						<p class="two-lines">„Versteckte Plätze“ – Guide-App für legendenumwobene Orte</p>
+						<p class="one-line">Im Rahmen eines UI/UX-Kurses, Juni 2022</p>
+					</div>
+
+					<div class="project-text-block">
+						<p>
+						Die POI-App führt Nutzer zu wenig bekannten Orten mit besonderen Geschichten und bietet Einblicke hinter die Fassade einer Region. Orte werden mit historischen Fakten, Legenden und Mythen verbunden, um ein emotionales, erzählerisches Erlebnis zu schaffen.
+Eine Kartenansicht mit markierten Punkten sowie kurze, leicht verständliche Texte machen die App ideal für unterwegs und lassen versteckte, oft übersehene Plätze neu entdecken.
+						</p>
+					</div>
+
+				</div>
+
+				<section class="section-image-bottom">
+				        <img src="img/bottom_image_spaceholder.png" alt="">
+	
+						<div class="stage">
+							<div class="panel p3" style="background-image:url('img/img1.png')"></div>
+							<div class="panel p2" style="background-image:url('img/img2.png')"></div>
+							<div class="panel p1" style="background-image:url('img/img3.png')">
+							    <video class = "prototype" autoplay muted loop>
+									<source src="video/lostdot_prototype.mp4" type="video/mp4">
+								</video>
+							</div>
+						</div>
+		
+				</section>
+
+			</div>
+	  
+		</section>	
+	
 
 
-/* =========================
-   restore later
-========================= */
---sam-border-color-grey-hell:#DFDFDF;
---sam-border-color-grey-dark:#AFAFAF;
---sam-font-color-navi-grey-dark:#222222;
---sam-font-color-navi-hover-grey:#7A7A7A;
---sam-font-color-grey:#767676;
---sam-background-color-grey:#929292;
---sam-background-color-grey-transparent:rgba(100, 100, 100, 0.5);
+		<!-- CUTE COUNTER -->
+		<section class="section cutecounter">
+	
+			<!-- PARALLAX SECTION -->
+			<section class="section parallax">
 
-}
+				<!-- Sticky Image Layer -->
+				<div class="section-sticky-ui">
+					<div class="sticky-image">
+						<img src="svg/default.svg" alt="default" >
+					</div>
+				</div>
+
+				<!-- Fixed Image Layer -->
+				<div class="fixed-image">
+
+					<img src="svg/emblem_cutecounter_900_900.svg" class="apleicon" alt="Apfel">
+				</div>
+
+			</section>
+
+			<!-- BACK TO TOP -->
+			<div class="section-ui">
+				<div class="back-to-top back-to-top--right">
+					<img src="svg/back_to_top_cutecounter_icon.svg" alt="">
+					<span class="back-to-top-label">Cute Counter</span>
+				</div>
+			</div>
+	  
+			<!-- CONTENT -->
+			<div class="project-layout">
+
+				<!-- IMAGE MAIN-->
+				<div class="section-image-main">
+					<img src="img/cutecounter_image_main.png" alt="">
+				</div>
+
+				<!-- TEXT -->
+				<div class="project-text">
+
+					<div class="project-text-top">
+						<h2 >Cute Counter</h2>
+						<p class="two-lines">App zur Erfassung, Analyse und visuellen Darstellung zählbarer Ereignisse</p>
+						<p class="one-line">Im Rahmen einer Bachelorarbeit, Juni 2022</p>
+					</div>
+
+					<div class="project-text-block">
+						<p>
+						Zahlen bestimmen unser Leben — überall wird gezählt, gemessen und ausgewertet. Dahinter steht der Wunsch, Zusammenhänge besser zu verstehen, Entwicklungen nachvollziehen zu können und fundierte Entscheidungen zu treffen. Cute Counter unterstützt dabei, Daten übersichtlich zu erfassen und komplexe Informationen visuell verständlich darzustellen</p>
+					</div>
+
+				</div>
+
+				<!-- IMAGE -->
+				<div class="section-image-bottom">
+					<img src="img/cutecounter_image.png" alt="">
+				</div>
+
+			</div>
+	  
+		</section>	
+
+
+
+		<!-- INTERCOM -->
+		<section class="section intercom">
+	
+			<!-- PARALLAX SECTION -->
+			<section class="section parallax">
+
+				<!-- Sticky Image Layer -->
+				<div class="section-sticky-ui">
+					<div class="sticky-image">
+						<img src="svg/default.svg" alt="default">
+					</div>
+				</div>
+
+				<!-- Fixed Image Layer -->
+				<div class="fixed-image">
+					<img src="svg/default.svg" alt="default">
+				</div>
+
+			</section>
+
+			<!-- BACK TO TOP -->
+			<div class="section-ui">
+				<div class="back-to-top back-to-top--right">
+					<img src="svg/back_to_top_intercom_icon.svg" alt="">
+					<span class="back-to-top-label">Intercom</span>
+				</div>
+			</div>
+
+	  
+			<!-- CONTENT -->
+			<div class="project-layout">
+
+				<!-- VIDEO -->
+				<div class="project-video">
+					<video class="section-video" autoplay muted loop playsinline preload="metadata" controls>
+						<source src="video/intercom_video.mp4" type="video/mp4">
+					</video>
+				</div>
+
+				<!-- TEXT -->
+				<div class="project-text">
+
+					<div class="project-text-top">
+						<h2 >Intercom</h2>
+						<p class="two-lines">Embedded Android-Anwendung für Kommunikation und Geräteverwaltung</p>
+						<p class="one-line">Callom GmbH – RESIDIUM Produktlinie</p>
+					</div>
+
+					<div class="project-text-block">
+						<p>
+						Entwicklung einer Android-basierten Anwendung für Embedded-Geräte mit Fokus auf Interfacegestaltung und Systemintegration. Umsetzung neuer Funktionen, Gestaltung grafischer Elemente sowie Implementierung von Video-Streaming (H.264, Motion JPEG). Zusätzlich Mitwirkung an Softwarearchitektur, Schnittstellendefinition und Qualitätssicherung.</p>
+					</div>
+
+				</div>
+
+				<!-- IMAGE -->
+				<div class="section-image-bottom">
+					<img src="img/intercom_image.png" alt="">
+				</div>
+
+			</div>
+	  
+		</section>
+
+
+
+	<!-- SAM -->
+		<section class="section sam">
+	
+			<!-- PARALLAX SECTION -->
+			<section class="section parallax">
+
+				<!-- Sticky Image Layer -->
+				<div class="section-sticky-ui">
+					<div class="sticky-image">
+						<img src="svg/default.svg" alt="default">
+					</div>
+				</div>
+
+				<!-- Fixed Image Layer -->
+				<div class="fixed-image">
+					<img src="svg/default.svg" alt="default">
+				</div>
+
+			</section>
+			
+			
+			<!-- BACK TO TOP -->
+			<div class="section-ui">
+				<div class="back-to-top back-to-top--right">
+					<img src="svg/back_to_top_sam_icon.svg" alt="">
+					<span class="back-to-top-label">SAM</span>
+				</div>
+			</div>
+
+	  
+			<!-- CONTENT -->
+			<div class="project-layout">
+
+				<!-- VIDEO -->
+				<div class="project-video">
+					<video class="section-video" autoplay muted loop playsinline preload="metadata">
+						<source src="video/sam_video.mp4" type="video/mp4">
+					</video>
+				</div>
+
+				<!-- TEXT -->
+				<div class="project-text">
+
+					<div class="project-text-top">
+						<h2 >Soccer Area Management</h2>
+						<p class="two-lines">Corporate Identity, Web, Marketing und Branding für Fußballagentur.</p>
+						<p class="one-line">Eigenes Projekt – Beratungsagentur für Spieler</p>
+					</div>
+
+					<div class="project-text-block">
+						<p>
+						Logo-Entwicklung, Website-Gestaltung, Social-Media-Content, Flyer und Merchandising wurden erstellt, um eine konsistente Markenidentität zu schaffen. Ziel war es, die Sichtbarkeit der Agentur zu erhöhen und digitale sowie analoge Kommunikationskanäle professionell zu verbinden.</p>
+					</div>
+
+				</div>
+
+				<!-- IMAGE -->
+				<div class="section-image-bottom">
+					<img src="img/sam_image.png" alt="">
+				</div>
+
+			</div>
+	  
+		</section>
+ </main>
+<!-- ===== FOOTER ===== -->
+<footer>
+    <nav class="navigation-im-footer"> 
+        <p>© 2026 Gilenko |
+            <a href="datenschutz.html">Datenschutz</a>
+            <span class="devider">|</span>
+            <a href="impressum.html">Impressum</a>
+        </p>
+    </nav>
+</footer>
+
+<!-- ===== JAVA SCRIPT ===== -->
+  <script src="script.js" defer></script>
+  
+</body>
+</html>
