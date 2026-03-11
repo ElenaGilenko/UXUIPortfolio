@@ -1,0 +1,53 @@
+.stage {
+  position: absolute;
+  z-index:3;
+  top:0;
+  width: 100%;
+  height: 100%;  
+}
+
+/* Panels */
+.panel {
+  overflow:hidden;
+  position: absolute;
+  top:0;
+  width:36%;
+  height:100%;
+  transition: transform 1s ease;
+  background-size: cover;
+  background-position: center;
+  border-radius: 14px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  transition: transform 1s ease;
+}
+
+.p1 {
+  position: relative;
+  width:33%;
+  height:100%;
+    display:flex;
+  justify-content:center;
+  align-items:flex-start;
+}
+
+/* z-index */
+.p3 { z-index:3; left: 0; }   /* fix links */
+.p2 { z-index:4; left: 2%; }   /* startet leicht rechts von 3 */
+.p1 { z-index:5; left: 14%; }   /* startet leicht rechts von 2 */
+
+/* Zielposition */
+.move .p2 { transform: translateX(86%); }  /* rechts von Panel3 */
+.move .p1 { transform: translateX(156%); }  /* rechts von Panel2 */
+
+.prototype{
+  position:absolute;
+
+  top:5%;
+  bottom:17%;
+
+  left:50%;
+  transform:translateX(-50%);
+
+  width:70%;       /* Breite des Videos */
+  height:auto;
+}
