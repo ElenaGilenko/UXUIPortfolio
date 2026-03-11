@@ -250,12 +250,9 @@ h2 {
    image bottom
 ========================= */
 .section-image-bottom {
-  position: relative;
-  z-index: 2;
   margin: 100px 100px 100px 320px;
 }
 .section-image-bottom img {
-  position: relative;
   width: 100%;
   height: auto;
   display: block;
@@ -337,29 +334,6 @@ h2 {
   width: 100%;
   height: auto;;
 }
-
-
-
-
-
-
-
-
-
-.box {
- position: relative;
-  z-index: 3;
-  left: 80%;
-  top: 14,4%;
-  bottom:16,4%;
-}
-.prototype {
-	width: 100%;
-	height: 100%;
-}
-
-
-
 
 
 /* =========================
