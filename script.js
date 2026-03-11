@@ -31,14 +31,15 @@ videos.forEach(video => videoObserver.observe(video));
 
 
 /* section bottm stage*/
-const stage = document.querySelector('.stage');
+const stages = document.querySelectorAll('.stage');
 
 const stageObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
+	 const stage = entry.target;
     if(entry.intersectionRatio >= 0.5){
       stage.classList.add('move'); // Animation starten
     }
   });
 }, { threshold: 0.5 });
 
-stageObserver.observe(stage);
+stages.forEach(stage => stageObserver.observe(stage));
